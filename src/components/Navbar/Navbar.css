@@ -1,0 +1,60 @@
+:root {
+  --white: #fff;
+  --black: #181818;
+  --black-2: #202020;
+  --accent: #457b9d;
+}
+
+/* -- Nav Bar -- */
+.nav_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* -- Nav Bar Left-- */
+.navbar_left img {
+  margin: 1rem;
+  max-width: 2.5rem;
+}
+
+/* -- Nav Bar Right -- */
+.navbar_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar_right li {
+  margin: 0 1rem;
+  list-style-type: none;
+}
+
+.navbar_right a {
+  font-size: 0.9rem;
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease 0s;
+}
+
+.navbar_right a:hover {
+  color: var(--accent);
+}
+
+.navbar_right button {
+  font-size: 0.9rem;
+  margin: 0 1rem;
+  border: solid 2px var(--accent);
+  background-color: var(--black);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  color: var(--white);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar_right button:hover {
+  background-color: var(--accent);
+}
