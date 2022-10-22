@@ -15,8 +15,13 @@
 
 /* -- Nav Bar Left-- */
 .navbar_left img {
-  margin: 1rem;
+  margin: 1.3rem;
   max-width: 4rem;
+  transition: transform 5s ease-in-out;
+}
+
+.navbar_left img:hover {
+  transform: rotate(360deg);
 }
 
 /* -- Nav Bar Right -- */
@@ -34,19 +39,36 @@
 }
 
 .navbar_right a {
+  display: flex;
+  flex-direction: column-reverse;
   font-size: 1.5rem;
   color: var(--white);
   text-decoration: none;
-  transition: color 0.3s ease 0s;
+  transition: color 0.4s ease 0s;
+}
+
+.navbar_right a::before {
+  content: " ";
+  background-color: var(--white);
+  width: 0;
+  margin-left: 50%;
+  height: 2px;
+  transition: all 0.4s ease-in-out;
 }
 
 .navbar_right a:hover {
   color: var(--accent);
 }
 
+.navbar_right a:hover::before {
+  width: 100%;
+  background-color: var(--accent);
+  margin-left: 0;
+}
+
 .navbar_right button {
   font-size: 1.5rem;
-  margin: 0 1rem;
+  margin: 1.3rem 1.3rem 1rem 1rem;
   border: solid 2px var(--accent);
   background-color: var(--black);
   padding: 0.5rem 1rem;
