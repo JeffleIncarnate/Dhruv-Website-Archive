@@ -16,7 +16,7 @@
 /* -- Nav Bar Left-- */
 .navbar_left img {
   margin: 1rem;
-  max-width: 2.5rem;
+  max-width: 4rem;
 }
 
 /* -- Nav Bar Right -- */
@@ -34,7 +34,7 @@
 }
 
 .navbar_right a {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   color: var(--white);
   text-decoration: none;
   transition: color 0.3s ease 0s;
@@ -45,7 +45,7 @@
 }
 
 .navbar_right button {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   margin: 0 1rem;
   border: solid 2px var(--accent);
   background-color: var(--black);
