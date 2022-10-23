@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
+/* -- Hide Scrol Bar -- */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 * {
   font-family: "Lato", sans-serif;
   box-sizing: border-box;

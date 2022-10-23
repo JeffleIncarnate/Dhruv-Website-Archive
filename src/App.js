@@ -1,19 +1,22 @@
 // Spicy base css
 import "./App.css";
 
-// Components
-import Navbar from "./components/Navbar/Navbar";
-import Splash from "./components/Splash/Splash";
+// Pages
+import Home from "./pages/home";
+import Games from "./pages/games";
 
-// Images
-import Logo_light_NoText from "./images/Logo_Light.png";
-import Me from "./images/Me.jpg";
+// React
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <Navbar img={Logo_light_NoText} alt="Dhruv-Rayat's Logo" />
-      <Splash img={Me} alt="MEs" />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/games" element={<Games />} />
+        <Route path="/projects" element={<h1>Projects</h1>} />
+        <Route path="/timeline" element={<h1>Timeline</h1>} />
+      </Routes>
     </>
   );
 }

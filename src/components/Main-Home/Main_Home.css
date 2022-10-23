@@ -1,0 +1,128 @@
+:root {
+  --white: #fff;
+  --black: #181818;
+  --black-2: #202020;
+  --accent: #457b9d;
+}
+
+main {
+  margin-top: 5rem;
+}
+
+.projects {
+  color: var(--white);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.projects h2 {
+  font-size: 3rem;
+  position: absolute;
+  right: 1rem;
+  top: 65rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transform: rotate(90deg);
+}
+
+.projects h2::before {
+  content: "";
+  width: 100px;
+  height: 10px;
+  background-color: var(--accent);
+}
+
+.projects h2::after {
+  content: "";
+  width: 100px;
+  height: 10px;
+  background-color: var(--accent);
+}
+
+.projects p {
+  font-size: 1.3rem;
+  margin: 2rem;
+}
+
+.projects_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* -- Left -- */
+.projects_left {
+  width: 50%;
+  margin: 1rem 40rem 1rem 1rem;
+  aspect-ratio: 16/9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 2rem;
+}
+
+.projects_left > h3 {
+  font-size: 3rem;
+}
+
+.projects_left > p::after {
+  content: ">";
+  color: var(--white);
+  margin-left: 0.5rem;
+}
+
+/* -- Right -- */
+.projects_right {
+  width: 50%;
+  margin: 1rem 1rem 1rem 40rem;
+  aspect-ratio: 16/9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 2rem;
+}
+
+.projects_right > h3 {
+  font-size: 3rem;
+}
+
+.projects_right > p::after {
+  content: ">";
+  color: var(--white);
+  margin-left: 0.5rem;
+}
+
+/* -- Dhruv Banking --*/
+.dhruv_banking {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../images/projects/dhruv_banking.png);
+}
+
+/* -- Dhruv Data --*/
+.dhruv_data {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../images/projects/dhruv_data.png);
+}
+
+.haven_bot {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../images/projects/haven_bot.png);
+}
+
+.envio_club_website {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../images/projects/eviro_club_website.png);
+}

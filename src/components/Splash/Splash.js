@@ -4,7 +4,7 @@ function SplashPage(props) {
   return (
     <header className="splash_page">
       <div className="splash_page_left">
-        <h1>Hi, I'm Dhruv!</h1>
+        <h1>Hiya, I'm Dhruv!</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, hic.
           Ad sunt tenetur voluptas minus laborum ducimus at unde blanditiis, ut
