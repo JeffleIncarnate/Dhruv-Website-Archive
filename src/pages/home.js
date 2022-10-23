@@ -5,6 +5,7 @@ import "../App.css";
 import Navbar from "../components/Navbar/Navbar";
 import Splash from "../components/Splash/Splash";
 import MainHome from "../components/Main-Home/Main_Home";
+import Footer from "../components/Footer/Footer";
 
 // Images
 import Logo_light_NoText from "../images/Logo_Light.png";
@@ -23,6 +24,7 @@ function Home() {
       <Navbar img={Logo_light_NoText} alt="Dhruv-Rayat's Logo" />
       <Splash img={Me} alt="MEs" />
       <MainHome />
+      <Footer />
     </>
   );
 }

@@ -21,8 +21,9 @@ main {
 .projects h2 {
   font-size: 3rem;
   position: absolute;
-  right: 1rem;
-  top: 65rem;
+  right: 0rem;
+  top: 70rem;
+  transform-origin: 80%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -33,6 +34,7 @@ main {
   content: "";
   width: 100px;
   height: 10px;
+  margin: 10px;
   background-color: var(--accent);
 }
 
@@ -40,12 +42,8 @@ main {
   content: "";
   width: 100px;
   height: 10px;
+  margin: 10px;
   background-color: var(--accent);
-}
-
-.projects p {
-  font-size: 1.3rem;
-  margin: 2rem;
 }
 
 .projects_wrapper {
@@ -125,4 +123,124 @@ main {
 .envio_club_website {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../../images/projects/eviro_club_website.png);
+}
+
+/* -- About Me -- */
+.aboutme {
+  color: var(--white);
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  flex-direction: row-reverse;
+}
+
+.aboutme > p {
+  position: absolute;
+}
+
+.aboutme > h2 {
+  font-size: 3rem;
+  position: absolute;
+  left: 0rem;
+  top: 220rem;
+  transform-origin: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transform: rotate(-90deg);
+}
+
+.aboutme > h2::before {
+  content: "";
+  width: 100px;
+  height: 10px;
+  margin: 10px;
+  background-color: var(--accent);
+}
+
+.aboutme > h2::after {
+  content: "";
+  width: 100px;
+  height: 10px;
+  margin: 10px;
+  background-color: var(--accent);
+}
+
+/* -- About Me Left -- */
+.aboutme_left {
+  width: 50%;
+  text-align: center;
+}
+
+.aboutme_left > h3 {
+  font-size: 2rem;
+}
+.aboutme_left ul li {
+  list-style: none;
+  padding: 1rem 0rem 0.5rem 0rem;
+}
+
+.container {
+  color: var(--white);
+  width: 75%;
+  margin: auto;
+  background-color: var(--black-2);
+  border-radius: 50px 10px;
+  margin-bottom: 1.5%;
+}
+
+.skills {
+  text-align: right;
+  margin-right: 10%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 50px 10px;
+}
+
+.skills > p {
+  margin-right: 1rem;
+}
+
+.html {
+  width: 90%;
+  background-color: var(--accent);
+}
+
+.css {
+  width: 90%;
+  background-color: var(--accent);
+}
+
+.js {
+  width: 80%;
+  background-color: var(--accent);
+}
+
+.c-sharp {
+  width: 80%;
+  background-color: var(--accent);
+}
+
+.python {
+  width: 60%;
+  background-color: var(--accent);
+}
+
+/* -- About Me Right -- */
+.aboutme_right {
+  width: 50%;
+  text-align: center;
+}
+
+.aboutme_right > h3 {
+  font-size: 2rem;
+}
+
+.aboutme_right ul > li {
+  margin: 1rem;
+  font-size: 1.3rem;
+  list-style-type: none;
 }
