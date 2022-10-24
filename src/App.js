@@ -5,6 +5,7 @@ import "./App.css";
 import Home from "./pages/home";
 import Games from "./pages/games";
 import Projects from "./pages/projects";
+import Contact from "./pages/contact";
 
 // Pallete
 // import CommandPallete from "./components/Command-Pallete/CommandPallete";
@@ -19,7 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/games" element={<Games />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/timeline" element={<h1>Timeline</h1>} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </>
   );

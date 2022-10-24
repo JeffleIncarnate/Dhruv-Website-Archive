@@ -42,6 +42,6 @@
   background-color: var(--white);
 }
 
-.slideshowDot.active {
+.slideshowDot.active_dot {
   background-color: var(--accent);
 }

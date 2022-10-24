@@ -1,7 +1,5 @@
 import "./ProjectShow.css";
 
-import { FaGithub } from "react-icons/fa";
-
 function ProjectShow(props) {
   return (
     <div className="projects_show_wrapper">
@@ -12,7 +10,7 @@ function ProjectShow(props) {
       </div>
 
       <a href={props.GithubUrl} target="_blank">
-        <FaGithub />
+        {props.icon}
       </a>
     </div>
   );

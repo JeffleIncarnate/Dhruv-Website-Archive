@@ -186,7 +186,7 @@ function MainHome(props) {
               <strong>Flask</strong> - Web Development
             </li>
             <li>
-              <strong>PostgreSQL</strong> - Databases
+              <strong>PostgreSQL</strong> - Relational Table Data
             </li>
             <li>
               <strong>.NET</strong> - C#

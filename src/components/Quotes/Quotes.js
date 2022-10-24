@@ -50,7 +50,7 @@ function Quotes() {
         {quotes.map((_, idx) => (
           <div
             key={idx}
-            className={`slideshowDot${index === idx ? " active" : ""}`}
+            className={`slideshowDot${index === idx ? " active_dot" : ""}`}
             onClick={() => {
               setIndex(idx);
             }}

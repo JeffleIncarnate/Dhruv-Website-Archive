@@ -2,6 +2,7 @@ import "./Main_Projects.css";
 
 // Spicy Component
 import ProjectShow from "./Projects-Show/ProjectsShow";
+import { FaGithub } from "react-icons/fa";
 
 // Images
 import DhruvBanking from "../../images/projects/dhruv_banking.png";
@@ -18,30 +19,35 @@ function MainProjects() {
         name="Dhruv Banking"
         desc="The future of banking"
         GithubUrl="https://github.com/Dhruv-Banking"
+        icon={<FaGithub />}
       />
       <ProjectShow
         src={DhruvData}
         name="Dhruv Data"
         desc="The newest database"
         GithubUrl="https://github.com/Dhruv-Banking"
+        icon={<FaGithub />}
       />
       <ProjectShow
         src={EnviroClubWebsite}
         name="Enviro Club Website"
         desc="Enviro Club Website"
         GithubUrl="https://github.com/Dhruv-Banking"
+        icon={<FaGithub />}
       />
       <ProjectShow
         src={HavenBot}
         name="Haven Bot"
         desc="My spicy new discord bot"
         GithubUrl="https://github.com/Dhruv-Banking"
+        icon={<FaGithub />}
       />
       <ProjectShow
         src={OJCBadesWebsite}
         name="OJC Badges Website"
         desc="A website I made for badges at my previoud school"
         GithubUrl="https://github.com/Dhruv-Banking"
+        icon={<FaGithub />}
       />
     </main>
   );

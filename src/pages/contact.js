@@ -4,7 +4,7 @@ import "../App.css";
 // Components
 import Navbar from "../components/Navbar/Navbar";
 import SplashChild from "../components/Splash/SplashChild";
-import MainGames from "../components/Main-Games/Main_Games";
+import MainContact from "../components/Main-Contact/Main_Contact";
 import Footer from "../components/Footer/Footer";
 
 // Images
@@ -13,19 +13,19 @@ import Logo_light_NoText from "../images/Logo_Light.png";
 // React
 import { useEffect } from "react";
 
-function Games() {
+function Contact() {
   useEffect(() => {
-    document.title = "Dhruv Rayat | Games";
+    document.title = "Dhruv Rayat | Contact";
   });
 
   return (
     <>
       <Navbar img={Logo_light_NoText} alt="Dhruv-Rayat's Logo" />
-      <SplashChild PageName="Games" LinkTo="Home / Games >" />
-      <MainGames />
+      <SplashChild PageName="Contact" LinkTo="Home / Contact >" />
+      <MainContact />
       <Footer />
     </>
   );
 }
 
-export default Games;
+export default Contact;
