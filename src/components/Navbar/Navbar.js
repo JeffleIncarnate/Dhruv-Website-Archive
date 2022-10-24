@@ -18,12 +18,6 @@ function Navbar(props) {
           <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <Link to="/timeline">Timeline</Link>
-        </li>
-        <li>
-          <Link to="/#quotes">Quotes</Link>
-        </li>
-        <li>
           <Link to="#aboutme">About Me</Link>
         </li>
         <button type="button">Contact</button>

@@ -2,7 +2,7 @@ import "./Footer.css";
 import { Link } from "react-router-dom";
 import { FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
 
-function Footer(props) {
+function Footer() {
   return (
     <footer>
       <h3>Dhruv Rayat™️</h3>
@@ -15,13 +15,13 @@ function Footer(props) {
         <button type="button">Contact</button>
       </div>
       <div className="footer_spicy_links">
-        <a>
+        <a href="https://www.google.com/">
           <FaInstagram />
         </a>
-        <a>
+        <a href="https://www.google.com/">
           <FaTwitter />
         </a>
-        <a>
+        <a href="https://www.google.com/">
           <FaGithub />
         </a>
       </div>

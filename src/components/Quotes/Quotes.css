@@ -1,0 +1,55 @@
+:root {
+  --white: #fff;
+  --black: #181818;
+  --black-2: #202020;
+  --accent: #457b9d;
+}
+
+/* Slideshow */
+.slideshow {
+  margin: 10rem;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.slide {
+  display: inline-block;
+  height: 400px;
+  width: 100%;
+  border-radius: 40px;
+}
+
+.slide > p {
+  color: var(--white);
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10rem;
+}
+
+/* Buttons */
+
+.slideshowDots {
+  text-align: center;
+}
+
+.slideshowDot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  cursor: pointer;
+  margin: 15px 7px 0px;
+  background-color: var(--white);
+}
+
+.slideshowDot.active {
+  background-color: var(--accent);
+}
