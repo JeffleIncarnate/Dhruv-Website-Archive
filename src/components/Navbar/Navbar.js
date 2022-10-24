@@ -5,9 +5,9 @@ function Navbar(props) {
   return (
     <nav className="nav_bar">
       <div className="navbar_left">
-        <a href="/">
+        <Link to="/">
           <img src={props.img} alt={props.alt} />
-        </a>
+        </Link>
       </div>
 
       <ul className="navbar_right">
@@ -18,7 +18,7 @@ function Navbar(props) {
           <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <Link to="#aboutme">About Me</Link>
+          <Link to="#aboutme">About</Link>
         </li>
         <button type="button">Contact</button>
       </ul>

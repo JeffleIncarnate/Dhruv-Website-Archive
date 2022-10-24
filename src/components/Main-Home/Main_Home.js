@@ -1,29 +1,131 @@
+import { useState, useEffect } from "react";
+
 import "./Main_Home.css";
+import DhruvBanking from "../../images/projects/dhruv_banking.png";
+import DhruvData from "../../images/projects/dhruv_data.png";
+import HavenBot from "../../images/projects/haven_bot.png";
+import EnviroClubWebite from "../../images/projects/eviro_club_website.png";
 
 function MainHome(props) {
+  const [isActive, setIsActive] = useState(false);
+  const [data, setData] = useState(false);
+  const [classname, setClassname] = useState("");
+
+  useEffect(() => {
+    const keyDownHandler = (event) => {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        setTimeout(() => {
+          setIsActive(false);
+        }, "500");
+        setClassname("card_out");
+        document.body.style.overflow = "scroll";
+        document.body.style.overflowX = "hidden";
+      }
+    };
+
+    document.addEventListener("keydown", keyDownHandler);
+
+    return () => {
+      document.removeEventListener("keydown", keyDownHandler);
+    };
+  }, []);
+
   return (
     <main>
-      <div id="projects" className="projects">
+      <div className="projects">
         <h2>Projects</h2>
 
         <div className="projects_wrapper">
           <div className="dhruv_banking projects_left">
             <h3>Dhruv Banking</h3>
-            <p>Learn More</p>
+            <button
+              onClick={() => {
+                setIsActive(true);
+                setData([
+                  "Dhruv Banking",
+                  "This is the future of banking",
+                  DhruvBanking,
+                ]);
+                setClassname("card_in");
+                document.body.style.overflow = "hidden";
+              }}
+            >
+              Learn More
+            </button>
           </div>
           <div className="dhruv_data projects_right">
             <h3>Dhruv Data</h3>
-            <p>Learn More</p>
+            <button
+              onClick={() => {
+                setIsActive(true);
+                setData([
+                  "Dhruv Data",
+                  "Welcome to the all new Database system",
+                  DhruvData,
+                ]);
+                setClassname("card_in");
+                document.body.style.overflow = "hidden";
+              }}
+            >
+              Learn More
+            </button>
           </div>
           <div className="haven_bot projects_left">
             <h3>Haven Bot</h3>
-            <p>Learn More</p>
+            <button
+              onClick={() => {
+                setIsActive(true);
+                setData(["Haven Bot", "This is my discord bot :3", HavenBot]);
+                setClassname("card_in");
+                document.body.style.overflow = "hidden";
+              }}
+            >
+              Learn More
+            </button>
           </div>
           <div className="envio_club_website projects_right">
             <h3>Envro Club Website</h3>
-            <p>Learn More</p>
+            <button
+              onClick={() => {
+                setIsActive(true);
+                setData([
+                  "Enviro Club Website",
+                  "A website I am working on for my school",
+                  EnviroClubWebite,
+                ]);
+                setClassname("card_in");
+                document.body.style.overflow = "hidden";
+              }}
+            >
+              Learn More
+            </button>
           </div>
         </div>
+
+        {isActive ? (
+          <div className="projects_modal">
+            <div className={`modal_inner ${classname}`}>
+              <img src={data[2]} alt="Dhruv Banking" title="Dhruv Banking" />
+              <div>
+                <h3>{data[0]}</h3>
+                <p>{data[1]}</p>
+              </div>
+              <button
+                onClick={() => {
+                  setTimeout(() => {
+                    setIsActive(false);
+                  }, "500");
+                  setClassname("card_out");
+                  document.body.style.overflow = "scroll";
+                  document.body.style.overflowX = "hidden";
+                }}
+              >
+                X
+              </button>
+            </div>
+          </div>
+        ) : null}
       </div>
 
       <div id="aboutme" className="aboutme">

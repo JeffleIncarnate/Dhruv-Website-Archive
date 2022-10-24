@@ -30,7 +30,7 @@ function Quotes() {
 
     return () => {
       resetTimeout();
-    };
+    }; // eslint-disable-next-line
   }, [index]);
 
   return (

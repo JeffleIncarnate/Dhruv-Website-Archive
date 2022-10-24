@@ -9,8 +9,6 @@ function Footer() {
       <div className="footer_links">
         <Link to="/games">Games</Link>
         <Link to="/projects">Projects</Link>
-        <Link to="/timeline">Timeline</Link>
-        <Link to="/#quotes">Quotes</Link>
         <Link to="#aboutme">About</Link>
         <button type="button">Contact</button>
       </div>

@@ -11,7 +11,14 @@ function SplashPage(props) {
           ipsam esse vero sit numquam, velit, soluta neque id!
         </p>
 
-        <button type="button">Read More</button>
+        <button
+          type="button"
+          onClick={() => {
+            window.scrollBy(0, 750);
+          }}
+        >
+          Read More
+        </button>
       </div>
       <div className="splash_page_right">
         <img src={props.img} alt={props.alt} />

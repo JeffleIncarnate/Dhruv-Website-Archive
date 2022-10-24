@@ -5,6 +5,9 @@ import "./App.css";
 import Home from "./pages/home";
 import Games from "./pages/games";
 
+// Pallete
+// import CommandPallete from "./components/Command-Pallete/CommandPallete";
+
 // React
 import { Route, Routes } from "react-router-dom";
 
