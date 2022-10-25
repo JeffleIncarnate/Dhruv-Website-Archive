@@ -20,7 +20,7 @@ function Navbar(props) {
           <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <Link to="#aboutme">About</Link>
+          <Link to="/about">About</Link>
         </li>
         <button
           type="button"

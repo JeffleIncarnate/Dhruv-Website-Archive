@@ -1,7 +1,7 @@
 import "./Main_Contact.css";
 
 import { useRef } from "react";
-import { FaLocationArrow } from "react-icons/fa";
+import { FaLocationArrow, FaDiscord } from "react-icons/fa";
 
 function MainContact() {
   const fName = useRef(null);
@@ -115,6 +115,12 @@ function MainContact() {
           <FaLocationArrow className="contact_right_section_icon" />
           <h2>Location</h2>
           <p>Auckland, New Zealand</p>
+        </div>
+
+        <div className="contact_right_section">
+          <FaDiscord className="contact_right_section_icon" />
+          <h2>Discord</h2>
+          <p>໓hrนง rคฯคt#2867</p>
         </div>
       </div>
     </main>

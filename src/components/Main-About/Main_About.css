@@ -1,0 +1,46 @@
+.about_main {
+  width: 100%;
+  color: var(--white);
+}
+
+.about_me {
+  width: 70%;
+  margin: 0 0 5rem 15%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about_me > h2 {
+  font-size: 3rem;
+}
+
+.about_me > p {
+  font-size: 1.3rem;
+}
+
+.about_experiences {
+  width: 70%;
+  margin: 10rem 0 0 15%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about_experiences > h2 {
+  font-size: 3rem;
+}
+
+.about_experiences > h3 {
+  margin: 2rem 0 0.5rem 0;
+}
+
+.about_experiences ul > li {
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  list-style-type: none;
+}

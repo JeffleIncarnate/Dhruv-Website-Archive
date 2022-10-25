@@ -23,6 +23,7 @@
   content: "";
   margin-right: 0.7rem;
   transition: width 1s ease-in-out;
+  width: 150px;
 }
 
 .splash_child > h1::after {
@@ -32,13 +33,6 @@
   content: "";
   margin-left: 0.7rem;
   transition: width 1s ease-in-out;
-}
-
-.splash_child > h1:hover::after {
-  width: 150px;
-}
-
-.splash_child > h1:hover::before {
   width: 150px;
 }
 

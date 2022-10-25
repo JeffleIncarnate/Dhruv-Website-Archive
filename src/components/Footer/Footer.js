@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer_links">
         <Link to="/games">Games</Link>
         <Link to="/projects">Projects</Link>
-        <Link to="/aboutme">About</Link>
+        <Link to="/about">About</Link>
         <button type="button">Contact</button>
       </div>
       <div className="footer_spicy_links">

@@ -31,6 +31,7 @@
 
 .contact_left > form p {
   color: grey;
+  margin: 0.5rem 0;
 }
 
 .contact_inner_wrapper {
@@ -132,7 +133,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-left: 10%;
+  margin: 1rem 1rem 1rem 10%;
+  width: 30%;
 }
 
 .contact_right_section > h2 {
