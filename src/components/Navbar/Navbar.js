@@ -13,6 +13,8 @@ function Navbar(props) {
     const [closeDiv, setCloseDiv] = useState(false)
     const [dataMobileNav, setDataMobileNav] = useState("mobile_nav")
 
+    const [clickActive, setClickActive] = useState(true)
+
     return (<nav className="nav_bar">
             <div className="navbar_left">
                 <Link to="/">
@@ -41,31 +43,38 @@ function Navbar(props) {
             </ul>
 
             <div className="navbar_lines" onClick={() => {
-                if (closeDiv) {
+                if (clickActive) {
+                    setClickActive(false)
+                    if (closeDiv) {
+                        setTimeout(() => {
+                            setDataSmallDiv("rev_shorten_div_finish")
+                            setDataTopToBottomMov("rev_top_to_bottom_finish")
+                            setDataBottomToTopMov("rev_bottom_to_top_finish")
+                            setDataMobileNav("rev_mobile_nav")
+                        }, "490")
+                        setDataMobileNav("rev_mobile_nav rev_mobile_nav_class_anim")
+                        setDataSmallDiv("rev_shorten_div")
+                        setDataTopToBottomMov("rev_top_to_bottom")
+                        setDataBottomToTopMov("rev_bottom_to_top")
+                        setCloseDiv(false)
+                    } else {
+                        setSmallDiv(true)
+                        setTimeout(() => {
+                            setDataSmallDiv("shorten_div_finish")
+                            setDataTopToBottomMov("top_to_bottom_finish")
+                            setDataBottomToTopMov("bottom_to_top_finish")
+                            setDataMobileNav("mobile_nav_finish")
+                        }, "490")
+                        setDataMobileNav("mobile_nav mobile_nav_class_anim")
+                        setDataSmallDiv("shorten_div")
+                        setDataTopToBottomMov("top_to_bottom")
+                        setDataBottomToTopMov("bottom_to_top")
+                        setCloseDiv(true)
+                    }
+
                     setTimeout(() => {
-                        setDataSmallDiv("rev_shorten_div_finish")
-                        setDataTopToBottomMov("rev_top_to_bottom_finish")
-                        setDataBottomToTopMov("rev_bottom_to_top_finish")
-                        setDataMobileNav("rev_mobile_nav")
+                        setClickActive(true)
                     }, "490")
-                    setDataMobileNav("rev_mobile_nav rev_mobile_nav_class_anim")
-                    setDataSmallDiv("rev_shorten_div")
-                    setDataTopToBottomMov("rev_top_to_bottom")
-                    setDataBottomToTopMov("rev_bottom_to_top")
-                    setCloseDiv(false)
-                } else {
-                    setSmallDiv(true)
-                    setTimeout(() => {
-                        setDataSmallDiv("shorten_div_finish")
-                        setDataTopToBottomMov("top_to_bottom_finish")
-                        setDataBottomToTopMov("bottom_to_top_finish")
-                        setDataMobileNav("mobile_nav_finish")
-                    }, "490")
-                    setDataMobileNav("mobile_nav mobile_nav_class_anim")
-                    setDataSmallDiv("shorten_div")
-                    setDataTopToBottomMov("top_to_bottom")
-                    setDataBottomToTopMov("bottom_to_top")
-                    setCloseDiv(true)
                 }
             }}>
                 <div className={dataTopToBottomMov}></div>

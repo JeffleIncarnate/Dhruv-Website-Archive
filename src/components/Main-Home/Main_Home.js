@@ -128,7 +128,7 @@ function MainHome(props) {
         ) : null}
       </div>
 
-      <div id="aboutme" className="aboutme">
+      <div className="aboutme">
         <h2>About Me</h2>
 
         <div className="aboutme_left">
