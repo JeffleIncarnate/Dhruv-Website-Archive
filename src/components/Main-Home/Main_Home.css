@@ -183,8 +183,8 @@ main {
 .aboutme > h2 {
   font-size: 3rem;
   position: absolute;
-  left: 0rem;
-  top: 220rem;
+  left: 0;
+  top: 210rem;
   transform-origin: 20%;
   display: flex;
   align-items: center;
@@ -373,5 +373,99 @@ main {
   100% {
     top: 60%;
     opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 1650px) {
+  .aboutme > h2 {
+    top: 190rem;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .aboutme > h2 {
+    top: 175rem;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .projects_left {
+    width: 40%;
+    margin-right: 25rem;
+  }
+
+  .projects_left > h3 {
+    font-size: 2.5rem;
+  }
+
+  .projects_left > button {
+    font-size: 1rem;
+  }
+
+  .projects_right {
+    width: 40%;
+    margin-left: 25rem;
+  }
+
+  .projects_right > h3 {
+    font-size: 2.5rem;
+  }
+
+  .projects_right > button {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .aboutme > h2 {
+    top: 160rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .projects_left {
+    width: 70%;
+    margin-right: 1rem;
+  }
+
+  .projects_right {
+    width: 70%;
+    margin-left: 1rem;
+  }
+
+  .projects h2 {
+    display: flex;
+    position: inherit;
+    transform: rotate(0);
+    transform-origin: 0%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .projects_left,
+  .projects_right {
+    width: 90%;
+    margin-right: 1rem;
+  }
+
+  .projects h2::after,
+  .projects h2::before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .projects > h2 {
+    margin: 1rem 0;
+  }
+
+  .projects_left > h3,
+  .projects_right > h3 {
+    font-size: 2rem;
+  }
+
+  .projects_left > button,
+  .projects_right > button{
+    font-size: 0.7rem;
   }
 }

@@ -129,7 +129,7 @@ function MainHome(props) {
       </div>
 
       <div className="aboutme">
-        <h2>About Me</h2>
+        <h2>About_Me</h2>
 
         <div className="aboutme_left">
           <h3>Languages</h3>

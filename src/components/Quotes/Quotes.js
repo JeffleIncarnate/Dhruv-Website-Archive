@@ -37,7 +37,7 @@ function Quotes() {
     <div className="slideshow">
       <div
         className="slideshowSlider"
-        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+        style={{ transform: `translate3d(${-index * 100}%, 0, 0)`, display: "block" }}
       >
         {quotes.map((quote, index) => (
           <div className="slide" key={index}>

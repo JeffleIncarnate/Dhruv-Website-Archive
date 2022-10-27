@@ -24,7 +24,7 @@ function Home() {
     <>
       <Splash img={Me} alt="MEs" />
       <MainHome />
-      <Quotes></Quotes>
+      {/*<Quotes />*/}
       <Footer />
     </>
   );
