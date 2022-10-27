@@ -13,6 +13,13 @@
     transition: transform 5s ease-in-out;
 }
 
+.navbar_dark_image {
+    margin: 1.3rem;
+    max-width: 4rem;
+    transition: transform 5s ease-in-out;
+    filter: brightness(0.1);
+}
+
 .navbar_left img:hover {
     transform: rotate(335deg);
 }

@@ -22,7 +22,6 @@ function Home() {
 
   return (
     <>
-      <Navbar img={Logo_light_NoText} alt="Dhruv-Rayat's Logo" />
       <Splash img={Me} alt="MEs" />
       <MainHome />
       <Quotes></Quotes>

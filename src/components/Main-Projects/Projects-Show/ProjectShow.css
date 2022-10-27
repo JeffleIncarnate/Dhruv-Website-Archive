@@ -29,7 +29,7 @@
   margin: 1rem 1rem 1rem auto;
   font-size: 2rem;
   color: var(--white);
-  background-color: #303030;
+  background-color: var(--black-2);
   padding: 1rem 1rem 0.5rem 1rem;
   border-radius: 50%;
   cursor: pointer;

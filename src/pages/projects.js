@@ -7,9 +7,6 @@ import SplashChild from "../components/Splash/SplashChild";
 import MainProjects from "../components/Main-Projects/Main_Projects";
 import Footer from "../components/Footer/Footer";
 
-// Images
-import Logo_light_NoText from "../images/Logo_Light.png";
-
 // React
 import { useEffect } from "react";
 
@@ -20,7 +17,6 @@ function Home() {
 
   return (
     <>
-      <Navbar img={Logo_light_NoText} alt="Dhruv-Rayat's Logo" />
       <SplashChild PageName="Projects" LinkTo="Home / Projects >" />
       <MainProjects />
       <Footer />

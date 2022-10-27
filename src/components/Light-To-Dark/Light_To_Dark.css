@@ -1,0 +1,9 @@
+.light_to_dark_wrapper {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 2rem;
+    color: var(--white);
+    margin: 1rem;
+    cursor: pointer;
+}

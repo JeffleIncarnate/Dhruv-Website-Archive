@@ -20,7 +20,6 @@
 .slide > p {
   color: var(--white);
   text-align: center;
-  color: white;
   font-size: 2rem;
   font-weight: bold;
   margin-top: 10rem;
@@ -39,7 +38,7 @@
   border: 3px solid var(--accent);
   cursor: pointer;
   margin: 15px 7px 0px;
-  background-color: var(--white);
+  background-color: var(black-2);
 }
 
 .slideshowDot.active_dot {

@@ -7,9 +7,6 @@ import SplashChild from "../components/Splash/SplashChild";
 import MainContact from "../components/Main-Contact/Main_Contact";
 import Footer from "../components/Footer/Footer";
 
-// Images
-import Logo_light_NoText from "../images/Logo_Light.png";
-
 // React
 import { useEffect } from "react";
 
@@ -20,7 +17,6 @@ function Contact() {
 
   return (
     <>
-      <Navbar img={Logo_light_NoText} alt="Dhruv-Rayat's Logo" />
       <SplashChild PageName="Contact" LinkTo="Home / Contact >" />
       <MainContact />
       <Footer />

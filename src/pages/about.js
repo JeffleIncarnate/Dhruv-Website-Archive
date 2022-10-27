@@ -7,9 +7,6 @@ import SplashChild from "../components/Splash/SplashChild";
 import MainAbout from "../components/Main-About/Main_About";
 import Footer from "../components/Footer/Footer";
 
-// Images
-import Logo_light_NoText from "../images/Logo_Light.png";
-
 // React
 import { useEffect } from "react";
 
@@ -20,7 +17,6 @@ function About() {
 
   return (
     <>
-      <Navbar img={Logo_light_NoText} alt="Dhruv-Rayat's Logo" />
       <SplashChild PageName="About" LinkTo="Home / About >" />
       <MainAbout />
       <Footer />

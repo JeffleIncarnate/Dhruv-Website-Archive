@@ -1,7 +1,11 @@
 import "./CommandPallete.css";
 
 function CommandPallete() {
-  return <div></div>;
+  return (
+    <div>
+      <div></div>
+    </div>
+  )
 }
 
 export default CommandPallete;

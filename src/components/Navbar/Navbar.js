@@ -18,7 +18,7 @@ function Navbar(props) {
     return (<nav className="nav_bar">
             <div className="navbar_left">
                 <Link to="/">
-                    <img src={props.img} alt={props.alt}/>
+                    { props.isDarkImg ? <img src={props.img} alt={props.alt}/> : <img className="navbar_dark_image" src={props.img} alt={props.alt}/>}
                 </Link>
             </div>
 

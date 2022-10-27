@@ -50,7 +50,7 @@ footer > h3 {
   color: var(--white);
   font-size: 2rem;
   margin: 3rem 1rem 1rem 1rem;
-  background-color: #303030;
+  background-color: var(--black);
   padding: 1rem 1rem 0.5rem 1rem;
   border-radius: 50%;
   cursor: pointer;
