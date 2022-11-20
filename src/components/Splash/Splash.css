@@ -83,3 +83,47 @@
   max-height: 100%;
   margin-right: 7rem;
 }
+
+/* -- Responsive -- */
+@media only screen and (max-width: 1350px) {
+  .splash_page_left {
+    margin-left: 3rem;
+  }
+
+  .splash_page_right > img {
+    margin-right: 3rem;
+    max-height: 90%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .splash_page_right {
+    display: none;
+  }
+
+  .splash_page_left {
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .splash_page_left {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 514px) {
+  .splash_page_left h1 {
+    font-size: 3rem;
+  }
+
+  .splash_page_left p {
+    font-size: 1.1rem;
+  }
+
+  .splash_page_left button {
+    font-size: 1.1rem;
+  }
+}
