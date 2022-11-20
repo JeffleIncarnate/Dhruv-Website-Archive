@@ -131,67 +131,69 @@ function MainHome(props) {
       <div className="aboutme">
         <h2>About_Me</h2>
 
-        <div className="aboutme_left">
-          <h3>Languages</h3>
-          <br />
-          <ul>
-            <li>HTML</li>
-            <div className="container">
-              <div className="skills html">
-                <p>90%</p>
+        <div className="aboutme_wrapper">
+          <div className="aboutme_left">
+            <h3>Languages</h3>
+            <br />
+            <ul>
+              <li>HTML</li>
+              <div className="container">
+                <div className="skills html">
+                  <p>90%</p>
+                </div>
               </div>
-            </div>
 
-            <li>CSS</li>
-            <div className="container">
-              <div className="skills css">
-                <p>90%</p>
+              <li>CSS</li>
+              <div className="container">
+                <div className="skills css">
+                  <p>90%</p>
+                </div>
               </div>
-            </div>
 
-            <li>JavaScript</li>
-            <div className="container">
-              <div className="skills js">
-                <p>80%</p>
+              <li>JavaScript</li>
+              <div className="container">
+                <div className="skills js">
+                  <p>80%</p>
+                </div>
               </div>
-            </div>
 
-            <li>C#</li>
-            <div className="container">
-              <div className="skills c-sharp">
-                <p>80%</p>
+              <li>C#</li>
+              <div className="container">
+                <div className="skills c-sharp">
+                  <p>80%</p>
+                </div>
               </div>
-            </div>
 
-            <li>Python</li>
-            <div className="container">
-              <div className="skills python">
-                <p>60%</p>
+              <li>Python</li>
+              <div className="container">
+                <div className="skills python">
+                  <p>60%</p>
+                </div>
               </div>
-            </div>
-          </ul>
-        </div>
+            </ul>
+          </div>
 
-        <div className="aboutme_right">
-          <h3>Technologies</h3>
+          <div className="aboutme_right">
+            <h3>Technologies</h3>
 
-          <ul>
-            <li>
-              <strong>React</strong> - Web Development
-            </li>
-            <li>
-              <strong>Express</strong> - REST Api's
-            </li>
-            <li>
-              <strong>Flask</strong> - Web Development
-            </li>
-            <li>
-              <strong>PostgreSQL</strong> - Relational Table Data
-            </li>
-            <li>
-              <strong>.NET</strong> - C#
-            </li>
-          </ul>
+            <ul>
+              <li>
+                <strong>React</strong> - Web Development
+              </li>
+              <li>
+                <strong>Express</strong> - REST Api's
+              </li>
+              <li>
+                <strong>Flask</strong> - Web Development
+              </li>
+              <li>
+                <strong>PostgreSQL</strong> - Relational Table Data
+              </li>
+              <li>
+                <strong>.NET</strong> - C#
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </main>

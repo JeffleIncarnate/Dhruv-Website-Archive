@@ -176,6 +176,13 @@ main {
   flex-direction: row;
 }
 
+.aboutme_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .aboutme > p {
   position: absolute;
 }
@@ -414,11 +421,21 @@ main {
   .projects_right > button {
     font-size: 1rem;
   }
+
+  .aboutme > h2 {
+    top: 160rem;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
   .aboutme > h2 {
     top: 160rem;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .aboutme > h2 {
+    top: 145rem;
   }
 }
 
@@ -439,6 +456,33 @@ main {
     transform: rotate(0);
     transform-origin: 0%;
   }
+
+  .aboutme {
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .aboutme > h2 {
+    display: flex;
+    position: inherit;
+    transform: rotate(0);
+    transform-origin: 0%;
+    margin-bottom: 1rem;
+  }
+
+  .aboutme_wrapper {
+    flex-direction: column;
+  }
+
+  .aboutme_left,
+  .aboutme_right {
+    width: 90%;
+    margin: 2rem 0;
+  }
 }
 
 @media only screen and (max-width: 550px) {
@@ -451,6 +495,16 @@ main {
   .projects h2::after,
   .projects h2::before {
     display: none;
+  }
+
+  .aboutme > h2::after,
+  .aboutme > h2::before {
+    display: none;
+  }
+
+  .aboutme_left,
+  .aboutme_right {
+    width: 100%;
   }
 }
 
@@ -465,7 +519,7 @@ main {
   }
 
   .projects_left > button,
-  .projects_right > button{
+  .projects_right > button {
     font-size: 0.7rem;
   }
 }
