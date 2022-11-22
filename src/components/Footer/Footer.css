@@ -62,5 +62,34 @@ footer > h3 {
 }
 
 /* -- Responsive -- */
-@media only screen and (max-width: 1650px) {
+@media only screen and (max-width: 600px) {
+  footer > h3 {
+    font-size: 2.5rem;
+  }
+
+  .footer_links a,
+  .footer_links button {
+    font-size: 1.25rem;
+  }
+
+  .footer_spicy_links a {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .footer_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer_links a {
+    margin: 1rem;
+  }
+
+  .footer_links button {
+    margin-bottom: 2rem;
+  }
 }

@@ -1,8 +1,9 @@
 import "./Footer.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
 
 function Footer() {
+  let navigate = useNavigate();
   return (
     <footer>
       <h3>Dhruv Rayat™️</h3>
@@ -10,16 +11,35 @@ function Footer() {
         <Link to="/games">Games</Link>
         <Link to="/projects">Projects</Link>
         <Link to="/about">About</Link>
-        <button type="button">Contact</button>
+        <button
+          type="button"
+          onClick={() => {
+            navigate("/contact");
+          }}
+        >
+          Contact
+        </button>
       </div>
       <div className="footer_spicy_links">
-        <a href="https://www.google.com/">
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://www.instagram.com/dhruv_rayat/"
+        >
           <FaInstagram />
         </a>
-        <a href="https://twitter.com/RayatDhruv">
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://twitter.com/RayatDhruv"
+        >
           <FaTwitter />
         </a>
-        <a href="https://www.google.com/">
+        <a
+          rel="noreferrer"
+          target="_blank"
+          href="https://github.com/Dhruv-Rayat1"
+        >
           <FaGithub />
         </a>
       </div>
