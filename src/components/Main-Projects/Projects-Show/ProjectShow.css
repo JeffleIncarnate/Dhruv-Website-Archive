@@ -39,3 +39,46 @@
 .projects_show_wrapper > a:hover {
   color: var(--accent);
 }
+
+@media only screen and (max-width: 1050px) {
+  .projects_show_wrapper > img {
+    max-width: 15rem;
+  }
+
+  .projects_show_wrapper > div h2 {
+    font-size: 2rem;
+  }
+
+  .projects_show_wrapper > a {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  .projects_show_wrapper {
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+  }
+
+  .projects_show_wrapper > div {
+    margin: 1rem 0;
+  }
+
+  .projects_show_wrapper > img {
+    margin: 1rem 0;
+    max-width: 90%;
+  }
+
+  .projects_show_wrapper > a {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .projects_show_wrapper {
+    width: 80%;
+    margin-left: 10%;
+  }
+}

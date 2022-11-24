@@ -17,7 +17,6 @@
 }
 
 .splash_child > h1::before {
-  width: 0;
   height: 10px;
   background-color: var(--accent);
   content: "";
@@ -27,7 +26,6 @@
 }
 
 .splash_child > h1::after {
-  width: 0;
   height: 10px;
   background-color: var(--accent);
   content: "";
@@ -39,4 +37,24 @@
 .splash_child > p {
   font-size: 1.5rem;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 750px) {
+  .splash_child > h1::before,
+  .splash_child > h1::after {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .splash_child > h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .splash_child > h1::before,
+  .splash_child > h1::after {
+    display: none;
+  }
 }

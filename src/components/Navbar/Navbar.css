@@ -1,387 +1,394 @@
 /* -- Nav Bar -- */
 .nav_bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 /* -- Nav Bar Left-- */
 .navbar_left img {
-    margin: 1.3rem;
-    max-width: 4rem;
-    transition: transform 5s ease-in-out;
+  margin: 1.3rem;
+  max-width: 4rem;
+  transition: transform 5s ease-in-out;
 }
 
 .navbar_dark_image {
-    margin: 1.3rem;
-    max-width: 4rem;
-    transition: transform 5s ease-in-out;
-    filter: brightness(0.1);
+  margin: 1.3rem;
+  max-width: 4rem;
+  transition: transform 5s ease-in-out;
+  filter: brightness(0.1);
 }
 
 .navbar_left img:hover {
-    transform: rotate(335deg);
+  transform: rotate(335deg);
 }
 
 /* -- Nav Bar Right -- */
 .navbar_right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar_right li {
-    margin: 0 1rem;
-    list-style-type: none;
+  margin: 0 1rem;
+  list-style-type: none;
 }
 
 .navbar_right a {
-    display: flex;
-    flex-direction: column-reverse;
-    font-size: 1.5rem;
-    color: var(--white);
-    text-decoration: none;
-    transition: color 0.4s ease 0s;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 1.5rem;
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.4s ease 0s;
 }
 
 .navbar_right a::before {
-    content: "";
-    margin-top: 0.1rem;
-    background-color: var(--white);
-    width: 0;
-    margin-left: 50%;
-    height: 2px;
-    transition: all 0.4s ease-in-out;
+  content: "";
+  margin-top: 0.1rem;
+  background-color: var(--white);
+  width: 0;
+  margin-left: 50%;
+  height: 2px;
+  transition: all 0.4s ease-in-out;
 }
 
 .navbar_right a:hover {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 .navbar_right a:hover::before {
-    width: 100%;
-    background-color: var(--accent);
-    margin-left: 0;
+  width: 100%;
+  background-color: var(--accent);
+  margin-left: 0;
 }
 
 .navbar_right button {
-    font-size: 1.5rem;
-    margin: 1.3rem 1.3rem 1rem 1rem;
-    border: solid 2px var(--accent);
-    background-color: var(--black);
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    color: var(--white);
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+  font-size: 1.5rem;
+  margin: 1.3rem 1.3rem 1rem 1rem;
+  border: solid 2px var(--accent);
+  background-color: var(--black);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .navbar_right button:hover {
-    background-color: var(--accent);
+  background-color: var(--accent);
 }
 
 .active {
-    padding: 0.7rem;
-    border-radius: 0.5rem;
-    background-color: var(--black-2);
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  background-color: var(--black-2);
 }
 
 /* -- Spicy repsonsive navbar -- */
 .navbar_lines {
-    display: none;
-    width: 2rem;
-    aspect-ratio: 1/1;
-    margin: 0 2.3rem;
-    z-index: 2;
+  display: none;
+  width: 2rem;
+  aspect-ratio: 1/1;
+  margin: 0 2.3rem;
+  z-index: 2;
 }
 
 .navbar_lines_x1,
 .navbar_lines_x2,
 .navbar_lines_disaper {
-    height: 0.2rem;
-    width: 100%;
-    margin: 0.4rem 0;
-    background-color: var(--white);
+  height: 0.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  background-color: var(--white);
 }
 
 .shorten_div {
-    animation: average_div 0.5s;
-    height: 0.2rem;
-    width: 100%;
-    margin: 0.4rem 0;
-    background-color: var(--white);
+  animation: average_div 0.5s;
+  height: 0.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  background-color: var(--white);
 }
 
 .shorten_div_finish {
-    height: 0.2rem;
-    margin: 0.4rem 0;
-    background-color: var(--white);
-    width: 0%;
+  height: 0.2rem;
+  margin: 0.4rem 0;
+  background-color: var(--white);
+  width: 0%;
 }
 
 .top_to_bottom {
-    transform-origin: top left;
-    animation: top_to_bottom_anim 0.5s;
-    height: 0.2rem;
-    width: 100%;
-    margin: 0.4rem 0;
-    background-color: var(--white);
+  transform-origin: top left;
+  animation: top_to_bottom_anim 0.5s;
+  height: 0.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  background-color: var(--white);
 }
 
 .top_to_bottom_finish {
-    transform-origin: top left;
-    transform: rotate(39deg);
-    height: 0.2rem;
-    width: 100%;
-    margin: 0.4rem 0;
-    background-color: var(--white);
+  transform-origin: top left;
+  transform: rotate(39deg);
+  height: 0.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  background-color: var(--white);
 }
 
 .bottom_to_top {
-    transform-origin: bottom left;
-    animation: bottom_to_top_anim 0.5s;
-    height: 0.2rem;
-    width: 100%;
-    margin: 0.4rem 0;
-    background-color: var(--white);
+  transform-origin: bottom left;
+  animation: bottom_to_top_anim 0.5s;
+  height: 0.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  background-color: var(--white);
 }
 
 .bottom_to_top_finish {
-    transform-origin: bottom left;
-    transform: rotate(-39deg);
-    height: 0.2rem;
-    width: 100%;
-    margin: 0.4rem 0;
-    background-color: var(--white);
+  transform-origin: bottom left;
+  transform: rotate(-39deg);
+  height: 0.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  background-color: var(--white);
 }
 
 @keyframes average_div {
-    from {
-        width: 100%;
-    }
-    to {
-        width: 0%;
-    }
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
 }
 
 @keyframes top_to_bottom_anim {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(39deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(39deg);
+  }
 }
 
 @keyframes bottom_to_top_anim {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(-39deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-39deg);
+  }
 }
 
 /* -- Reverse Div's :3 -- */
 .rev_shorten_div {
-    animation: rev_average_div 0.5s;
-    height: 0.2rem;
-    width: 0%;
-    margin: 0.4rem 0;
-    background-color: var(--white);
+  animation: rev_average_div 0.5s;
+  height: 0.2rem;
+  width: 0%;
+  margin: 0.4rem 0;
+  background-color: var(--white);
 }
 
 .rev_shorten_div_finish {
-    height: 0.2rem;
-    margin: 0.4rem 0;
-    background-color: var(--white);
-    width: 100%;
+  height: 0.2rem;
+  margin: 0.4rem 0;
+  background-color: var(--white);
+  width: 100%;
 }
 
 .rev_top_to_bottom {
-    transform-origin: top left;
-    animation: rev_top_to_bottom_anim 0.5s;
-    height: 0.2rem;
-    width: 100%;
-    margin: 0.4rem 0;
-    background-color: var(--white);
+  transform-origin: top left;
+  animation: rev_top_to_bottom_anim 0.5s;
+  height: 0.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  background-color: var(--white);
 }
 
 .rev_top_to_bottom_finish {
-    transform-origin: top left;
-    transform: rotate(0deg);
-    height: 0.2rem;
-    width: 100%;
-    margin: 0.4rem 0;
-    background-color: var(--white);
+  transform-origin: top left;
+  transform: rotate(0deg);
+  height: 0.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  background-color: var(--white);
 }
 
 .rev_bottom_to_top {
-    transform-origin: bottom left;
-    animation: rev_bottom_to_top_anim 0.5s;
-    height: 0.2rem;
-    width: 100%;
-    margin: 0.4rem 0;
-    background-color: var(--white);
+  transform-origin: bottom left;
+  animation: rev_bottom_to_top_anim 0.5s;
+  height: 0.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  background-color: var(--white);
 }
 
 .rev_bottom_to_top_finish {
-    transform-origin: bottom left;
-    transform: rotate(0deg);
-    height: 0.2rem;
-    width: 100%;
-    margin: 0.4rem 0;
-    background-color: var(--white);
+  transform-origin: bottom left;
+  transform: rotate(0deg);
+  height: 0.2rem;
+  width: 100%;
+  margin: 0.4rem 0;
+  background-color: var(--white);
 }
 
 @keyframes rev_average_div {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 100%;
-    }
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes rev_top_to_bottom_anim {
-    from {
-        transform: rotate(39deg);
-    }
-    to {
-        transform: rotate(0deg);
-    }
+  from {
+    transform: rotate(39deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
 
 @keyframes rev_bottom_to_top_anim {
-    from {
-        transform: rotate(-39deg);
-    }
-    to {
-        transform: rotate(0deg);
-    }
+  from {
+    transform: rotate(-39deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
 }
 
 @media only screen and (max-width: 800px) {
-    .navbar_lines {
-        display: block;
-    }
+  .navbar_lines {
+    display: block;
+  }
 
-    .navbar_right {
-        display: none;
-    }
+  .navbar_right {
+    display: none;
+  }
 }
 
 @keyframes mobile_nav_anim {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes rev_mobile_nav_anim {
-    from {
-        width: 100%;
-    }
-    to {
-        width: 0;
-    }
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
 }
 
 .mobile_nav_class_anim {
-    animation: mobile_nav_anim 0.5s;
+  animation: mobile_nav_anim 0.5s;
 }
 
 .rev_mobile_nav_class_anim {
-    animation: rev_mobile_nav_anim 0.5s;
+  animation: rev_mobile_nav_anim 0.5s;
 }
 
 .mobile_nav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    display: flex;
-    background-color: var(--black);
-    overflow-x: hidden;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  background-color: var(--black);
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
 }
 
 .rev_mobile_nav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    display: flex;
-    background-color: var(--black);
-    overflow-x: hidden;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  background-color: var(--black);
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
 }
 
 .mobile_nav_finish {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    display: flex;
-    background-color: var(--black);
-    overflow-x: hidden;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  background-color: var(--black);
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
 }
 
 .mobile_nav li,
 .mobile_nav_finish li,
 .rev_mobile_nav li {
-    margin: 1rem;
-    list-style-type: none;
+  margin: 1rem;
+  list-style-type: none;
 }
 
 .mobile_nav a,
 .mobile_nav_finish a,
-.rev_mobile_nav a{
-    display: flex;
-    flex-direction: column-reverse;
-    font-size: 2rem;
-    color: var(--white);
-    text-decoration: none;
-    transition: color 0.4s ease 0s;
+.rev_mobile_nav a {
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 2rem;
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.4s ease 0s;
 }
 
 .mobile_nav a:hover,
 .mobile_nav_finish a:hover,
 .rev_mobile_nav a:hover {
-    color: var(--accent);
+  color: var(--accent);
 }
 
 .mobile_nav button,
 .mobile_nav_finish button,
 .rev_mobile_nav button {
-    font-size: 2rem;
-    margin: 1rem;
-    border: solid 5px var(--accent);
-    background-color: var(--black);
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-    color: var(--white);
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+  font-size: 2rem;
+  margin: 1rem;
+  border: solid 5px var(--accent);
+  background-color: var(--black);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .mobile_nav button:hover,
 .mobile_nav_finish button:hover,
-.rev_mobile_nav button:hover{
-    background-color: var(--accent);
+.rev_mobile_nav button:hover {
+  background-color: var(--accent);
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar_left img,
+  .navbar_dark_image {
+    max-width: 3.5rem;
+  }
 }
