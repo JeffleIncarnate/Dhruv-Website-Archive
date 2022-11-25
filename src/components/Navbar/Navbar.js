@@ -100,18 +100,80 @@ function Navbar(props) {
       <div className={dataMobileNav}>
         <ul>
           <li>
-            <Link to="/games">Games</Link>
+            <Link
+              onClick={() => {
+                setTimeout(() => {
+                  setDataSmallDiv("rev_shorten_div_finish");
+                  setDataTopToBottomMov("rev_top_to_bottom_finish");
+                  setDataBottomToTopMov("rev_bottom_to_top_finish");
+                  setDataMobileNav("rev_mobile_nav");
+                }, "490");
+                setDataMobileNav("rev_mobile_nav rev_mobile_nav_class_anim");
+                setDataSmallDiv("rev_shorten_div");
+                setDataTopToBottomMov("rev_top_to_bottom");
+                setDataBottomToTopMov("rev_bottom_to_top");
+                setCloseDiv(false);
+              }}
+              to="/games"
+            >
+              Games
+            </Link>
           </li>
           <li>
-            <Link to="/projects">Projects</Link>
+            <Link
+              onClick={() => {
+                setTimeout(() => {
+                  setDataSmallDiv("rev_shorten_div_finish");
+                  setDataTopToBottomMov("rev_top_to_bottom_finish");
+                  setDataBottomToTopMov("rev_bottom_to_top_finish");
+                  setDataMobileNav("rev_mobile_nav");
+                }, "490");
+                setDataMobileNav("rev_mobile_nav rev_mobile_nav_class_anim");
+                setDataSmallDiv("rev_shorten_div");
+                setDataTopToBottomMov("rev_top_to_bottom");
+                setDataBottomToTopMov("rev_bottom_to_top");
+                setCloseDiv(false);
+              }}
+              to="/projects"
+            >
+              Projects
+            </Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link
+              onClick={() => {
+                setTimeout(() => {
+                  setDataSmallDiv("rev_shorten_div_finish");
+                  setDataTopToBottomMov("rev_top_to_bottom_finish");
+                  setDataBottomToTopMov("rev_bottom_to_top_finish");
+                  setDataMobileNav("rev_mobile_nav");
+                }, "490");
+                setDataMobileNav("rev_mobile_nav rev_mobile_nav_class_anim");
+                setDataSmallDiv("rev_shorten_div");
+                setDataTopToBottomMov("rev_top_to_bottom");
+                setDataBottomToTopMov("rev_bottom_to_top");
+                setCloseDiv(false);
+              }}
+              to="/about"
+            >
+              About
+            </Link>
           </li>
           <button
             type="button"
             onClick={() => {
               navigate("/contact");
+              setTimeout(() => {
+                setDataSmallDiv("rev_shorten_div_finish");
+                setDataTopToBottomMov("rev_top_to_bottom_finish");
+                setDataBottomToTopMov("rev_bottom_to_top_finish");
+                setDataMobileNav("rev_mobile_nav");
+              }, "490");
+              setDataMobileNav("rev_mobile_nav rev_mobile_nav_class_anim");
+              setDataSmallDiv("rev_shorten_div");
+              setDataTopToBottomMov("rev_top_to_bottom");
+              setDataBottomToTopMov("rev_bottom_to_top");
+              setCloseDiv(false);
             }}
           >
             Contact
