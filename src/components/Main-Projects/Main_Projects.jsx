@@ -20,6 +20,7 @@ function MainProjects() {
         desc="The future of banking"
         GithubUrl="https://github.com/Dhruv-Banking"
         icon={<FaGithub />}
+        alt="Dhruv Banking"
       />
       <ProjectShow
         src={DhruvData}
@@ -27,6 +28,7 @@ function MainProjects() {
         desc="The newest database"
         GithubUrl="https://github.com/Dhruv-Banking"
         icon={<FaGithub />}
+        alt="Dhruv Data"
       />
       <ProjectShow
         src={EnviroClubWebsite}
@@ -34,6 +36,7 @@ function MainProjects() {
         desc="Enviro Club Website"
         GithubUrl="https://github.com/Dhruv-Banking"
         icon={<FaGithub />}
+        alt="Enviro Club Website"
       />
       <ProjectShow
         src={HavenBot}
@@ -41,6 +44,7 @@ function MainProjects() {
         desc="My spicy new discord bot"
         GithubUrl="https://github.com/Dhruv-Banking"
         icon={<FaGithub />}
+        alt="Haven Bot"
       />
       <ProjectShow
         src={OJCBadesWebsite}
@@ -48,6 +52,7 @@ function MainProjects() {
         desc="A website I made for badges at my previoud school"
         GithubUrl="https://github.com/Dhruv-Banking"
         icon={<FaGithub />}
+        alt="OJC Badges Website"
       />
     </main>
   );

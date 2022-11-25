@@ -2,7 +2,6 @@
 import "../App.css";
 
 // Components
-import Navbar from "../components/Navbar/Navbar";
 import SplashChild from "../components/Splash/SplashChild";
 import MainProjects from "../components/Main-Projects/Main_Projects";
 import Footer from "../components/Footer/Footer";

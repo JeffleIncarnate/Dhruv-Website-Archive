@@ -2,14 +2,11 @@
 import "../App.css";
 
 // Components
-import Navbar from "../components/Navbar/Navbar";
 import Splash from "../components/Splash/Splash";
 import MainHome from "../components/Main-Home/Main_Home";
-import Quotes from "../components/Quotes/Quotes";
 import Footer from "../components/Footer/Footer";
 
 // Images
-import Logo_light_NoText from "../images/Logo_Light.png";
 import Me from "../images/Me.jpg";
 
 // React
@@ -24,7 +21,6 @@ function Home() {
     <>
       <Splash img={Me} alt="MEs" />
       <MainHome />
-      {/*<Quotes />*/}
       <Footer />
     </>
   );

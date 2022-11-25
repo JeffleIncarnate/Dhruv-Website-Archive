@@ -2,26 +2,25 @@
 import "../App.css";
 
 // Components
-import Navbar from "../components/Navbar/Navbar";
 import SplashChild from "../components/Splash/SplashChild";
-import MainAbout from "../components/Main-About/Main_About";
+import MainGames from "../components/Main-Games/Main_Games";
 import Footer from "../components/Footer/Footer";
 
 // React
 import { useEffect } from "react";
 
-function About() {
+function Games() {
   useEffect(() => {
-    document.title = "Dhruv Rayat | About Me";
+    document.title = "Dhruv Rayat | Games";
   });
 
   return (
     <>
-      <SplashChild PageName="About" LinkTo="Home / About >" />
-      <MainAbout />
+      <SplashChild PageName="Games" LinkTo="Home / Games >" />
+      <MainGames />
       <Footer />
     </>
   );
 }
 
-export default About;
+export default Games;
