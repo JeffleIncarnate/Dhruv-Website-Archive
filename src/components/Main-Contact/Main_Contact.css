@@ -104,7 +104,7 @@
 }
 
 .contact_submit > input {
-  width: 15%;
+  width: clamp(400px, 15%);
   margin: 1.5rem 0;
   padding: 0.5rem 1rem;
   background-color: transparent;
@@ -126,6 +126,7 @@
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 
 .contact_right_section {
@@ -148,4 +149,48 @@
   background-color: var(--black-2);
   border-radius: 1rem;
   margin: 1rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .contact_left {
+    width: 80%;
+  }
+
+  .contact_right {
+    width: 20%;
+    margin-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .contact_main {
+    flex-direction: column;
+  }
+
+  .contact_left {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contact_left > form {
+    width: 90%;
+    margin-left: 7.5%;
+  }
+
+  .contact_right {
+    width: 90%;
+    margin: 0;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .contact_right_section {
+    margin: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact_right {
+    flex-direction: column;
+  }
 }
