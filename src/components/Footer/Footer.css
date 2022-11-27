@@ -11,6 +11,7 @@ footer {
 footer > h3 {
   font-size: 3rem;
   margin-top: 3rem;
+  cursor: pointer;
 }
 
 .footer_links a {

@@ -6,15 +6,43 @@ function Footer() {
   let navigate = useNavigate();
   return (
     <footer>
-      <h3>Dhruv Rayat™️</h3>
+      <h3
+        onClick={() => {
+          navigate("/");
+        }}
+      >
+        Dhruv Rayat™️
+      </h3>
       <div className="footer_links">
-        <Link to="/games">Games</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/about">About</Link>
+        <Link
+          onClick={() => {
+            window.scrollBy(0, -100000);
+          }}
+          to="/games"
+        >
+          Games
+        </Link>
+        <Link
+          onClick={() => {
+            window.scrollBy(0, -100000);
+          }}
+          to="/projects"
+        >
+          Projects
+        </Link>
+        <Link
+          onClick={() => {
+            window.scrollBy(0, -100000);
+          }}
+          to="/about"
+        >
+          About
+        </Link>
         <button
           type="button"
           onClick={() => {
             navigate("/contact");
+            window.scrollBy(0, -100000);
           }}
         >
           Contact
