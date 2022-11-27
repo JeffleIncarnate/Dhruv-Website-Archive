@@ -10,6 +10,7 @@ function MainHome(props) {
   const [isActive, setIsActive] = useState(false);
   const [data, setData] = useState(false);
   const [classname, setClassname] = useState("");
+  const [classnameBackground, setclassnameBackground] = useState("");
 
   useEffect(() => {
     const keyDownHandler = (event) => {
@@ -48,6 +49,7 @@ function MainHome(props) {
                   DhruvBanking,
                 ]);
                 setClassname("card_in");
+                setclassnameBackground("background_in");
                 document.body.style.overflow = "hidden";
               }}
             >
@@ -65,6 +67,7 @@ function MainHome(props) {
                   DhruvData,
                 ]);
                 setClassname("card_in");
+                setclassnameBackground("background_in");
                 document.body.style.overflow = "hidden";
               }}
             >
@@ -78,6 +81,7 @@ function MainHome(props) {
                 setIsActive(true);
                 setData(["Haven Bot", "This is my discord bot :3", HavenBot]);
                 setClassname("card_in");
+                setclassnameBackground("background_in");
                 document.body.style.overflow = "hidden";
               }}
             >
@@ -95,6 +99,7 @@ function MainHome(props) {
                   EnviroClubWebite,
                 ]);
                 setClassname("card_in");
+                setclassnameBackground("background_in");
                 document.body.style.overflow = "hidden";
               }}
             >
@@ -104,7 +109,7 @@ function MainHome(props) {
         </div>
 
         {isActive ? (
-          <div className="projects_modal">
+          <div className={`projects_modal ${classnameBackground}`}>
             <div className={`modal_inner ${classname}`}>
               <img src={data[2]} alt="Dhruv Banking" title="Dhruv Banking" />
               <div>
@@ -117,6 +122,7 @@ function MainHome(props) {
                     setIsActive(false);
                   }, "500");
                   setClassname("card_out");
+                  setclassnameBackground("background_out");
                   document.body.style.overflow = "scroll";
                   document.body.style.overflowX = "hidden";
                 }}

@@ -341,7 +341,7 @@ main {
 }
 
 .modal_inner > div {
-  margin-bottom: 4rem;
+  margin-bottom: 12.5%;
   text-align: center;
 }
 
@@ -352,6 +352,14 @@ main {
 
 .modal_inner > div p {
   font-size: 1.3rem;
+}
+
+.background_in {
+  animation: background_in_anim 0.5s;
+}
+
+.background_out {
+  animation: background_out_anim 0.5s;
 }
 
 .card_in {
@@ -373,6 +381,24 @@ main {
   .modal_inner {
     width: 95%;
     aspect-ratio: 1/1;
+  }
+}
+
+@keyframes background_in_anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes background_out_anim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
