@@ -6,9 +6,8 @@ function SplashPage(props) {
       <div className="splash_page_left">
         <h1>Hiya, I'm Dhruv!</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, hic.
-          Ad sunt tenetur voluptas minus laborum ducimus at unde blanditiis, ut
-          ipsam esse vero sit numquam, velit, soluta neque id!
+          Hey! Welcome to my website :D. I hope you have a fun time. It was made
+          in React, with Javascript
         </p>
 
         <button
