@@ -37,6 +37,11 @@
 .splash_child > p {
   font-size: 1.5rem;
   text-decoration: underline;
+  color: var(--white);
+}
+
+.link_home {
+  color: var(--white);
 }
 
 @media only screen and (max-width: 750px) {
