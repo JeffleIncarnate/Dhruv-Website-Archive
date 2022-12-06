@@ -17,7 +17,7 @@ function MainProjects() {
       <ProjectShow
         src={DhruvBanking}
         name="Dhruv Banking"
-        desc="The future of banking"
+        desc="The future of banking. Dhruv Banking was for an assesment and was very fun to work on."
         GithubUrl="https://github.com/Dhruv-Banking"
         icon={<FaGithub />}
         alt="Dhruv Banking"
@@ -25,8 +25,8 @@ function MainProjects() {
       <ProjectShow
         src={DhruvData}
         name="Dhruv Data"
-        desc="The newest database"
-        GithubUrl="https://github.com/Dhruv-Banking"
+        desc="The newest database. This database a work in progress, I will eventually make it my main form of data collection."
+        GithubUrl="https://github.com/Dhruv-Software/Dhruv-Data"
         icon={<FaGithub />}
         alt="Dhruv Data"
       />
@@ -34,23 +34,23 @@ function MainProjects() {
         src={EnviroClubWebsite}
         name="Enviro Club Website"
         desc="Enviro Club Website"
-        GithubUrl="https://github.com/Dhruv-Banking"
+        GithubUrl="https://enviro-club.vercel.app/"
         icon={<FaGithub />}
         alt="Enviro Club Website"
       />
       <ProjectShow
         src={HavenBot}
         name="Haven Bot"
-        desc="My spicy new discord bot"
-        GithubUrl="https://github.com/Dhruv-Banking"
+        desc="This bot was mainly for fun, as I do not often code in Python, I thought it would be fun to do!"
+        GithubUrl="https://github.com/Dhruv-Rayat1/Haven-Bot"
         icon={<FaGithub />}
         alt="Haven Bot"
       />
       <ProjectShow
         src={OJCBadesWebsite}
         name="OJC Badges Website"
-        desc="A website I made for badges at my previoud school"
-        GithubUrl="https://github.com/Dhruv-Banking"
+        desc="A website I made for badges at my previous school"
+        GithubUrl="https://ojc-badges.netlify.app/"
         icon={<FaGithub />}
         alt="OJC Badges Website"
       />
