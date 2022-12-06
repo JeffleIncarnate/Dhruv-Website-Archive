@@ -373,14 +373,32 @@ main {
 @media only screen and (max-width: 900px) {
   .modal_inner {
     width: 90%;
+    height: 70%;
     aspect-ratio: 16/10;
+  }
+
+  .modal_inner > img {
+    height: 50%;
+  }
+
+  .modal_inner > div p {
+    margin-bottom: 4rem;
   }
 }
 
 @media only screen and (max-width: 550px) {
   .modal_inner {
     width: 95%;
+    height: 90%;
     aspect-ratio: 1/1;
+  }
+
+  .modal_inner > img {
+    height: 60%;
+  }
+
+  .modal_inner > div p {
+    margin-bottom: 4rem;
   }
 }
 
