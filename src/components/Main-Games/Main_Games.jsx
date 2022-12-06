@@ -14,15 +14,15 @@ function MainGames() {
       <ProjectShow
         src={Pogformer}
         name="Pogformer"
-        desc="The best game"
-        GithubUrl="https://github.com/Dhruv-Banking"
+        desc="Welcome to Pogformer, a Mario like platformer but with cubes."
+        GithubUrl="https://dhruv-rayat.itch.io/pogformer"
         icon={<FaItchIo />}
       />
       <ProjectShow
         src={FourDPhysicsGame}
         name="4D Physics Game"
-        desc="The best game"
-        GithubUrl="https://github.com/Dhruv-Banking"
+        desc="This was my latest game, 4D Physics. It uses the 4th dimention, time!"
+        GithubUrl="https://dhruv-rayat.itch.io/4d-physics-game"
         icon={<FaItchIo />}
       />
     </main>
