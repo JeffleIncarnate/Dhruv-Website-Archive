@@ -5,9 +5,13 @@ import "../App.css";
 import SplashChild from "../components/Splash/SplashChild";
 import MainGames from "../components/Main-Games/Main_Games";
 import Footer from "../components/Footer/Footer";
+import LightToDark from "../components/Light-To-Dark/Light_To_Dark";
 
 // React
 import { useEffect } from "react";
+
+// Animate
+import AnimatedPage from "../components/Animations/AnimatedPage";
 
 function Games() {
   useEffect(() => {
@@ -16,9 +20,12 @@ function Games() {
 
   return (
     <>
-      <SplashChild PageName="Games" LinkTo="Home / Games >" />
-      <MainGames />
-      <Footer />
+      <AnimatedPage>
+        <LightToDark />
+        <SplashChild PageName="Games" LinkTo="Home / Games >" />
+        <MainGames />
+        <Footer />
+      </AnimatedPage>
     </>
   );
 }

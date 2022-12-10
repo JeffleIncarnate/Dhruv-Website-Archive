@@ -5,6 +5,8 @@ import "../App.css";
 import SplashChild from "../components/Splash/SplashChild";
 import MainProjects from "../components/Main-Projects/Main_Projects";
 import Footer from "../components/Footer/Footer";
+import LightToDark from "../components/Light-To-Dark/Light_To_Dark";
+import AnimatedPage from "../components/Animations/AnimatedPage";
 
 // React
 import { useEffect } from "react";
@@ -16,9 +18,12 @@ function Home() {
 
   return (
     <>
-      <SplashChild PageName="Projects" LinkTo="Home / Projects >" />
-      <MainProjects />
-      <Footer />
+      <AnimatedPage>
+        <LightToDark />
+        <SplashChild PageName="Projects" LinkTo="Home / Projects >" />
+        <MainProjects />
+        <Footer />
+      </AnimatedPage>
     </>
   );
 }
