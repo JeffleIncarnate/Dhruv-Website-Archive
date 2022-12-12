@@ -9,6 +9,7 @@
   border: 4px solid var(--accent);
   border-radius: 1rem;
   color: var(--white);
+  cursor: pointer;
 }
 
 .projects_show_wrapper > div {

@@ -2,7 +2,12 @@ import "./ProjectShow.css";
 
 function ProjectShow(props) {
   return (
-    <div className="projects_show_wrapper">
+    <div
+      className="projects_show_wrapper"
+      onClick={() => {
+        window.open(props.GithubUrl, "_blank").focus();
+      }}
+    >
       <img src={props.src} alt={props.alt} />
       <div>
         <h2>{props.name}</h2>
