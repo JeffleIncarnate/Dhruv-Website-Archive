@@ -76,7 +76,9 @@ function MainContact() {
         >
           <div className="contact_wrapper">
             <div className="contact_inner_wrapper">
-              <label htmlFor="fName">First Name*</label>
+              <label htmlFor="fName">
+                First Name <span className="asterix">*</span>
+              </label>
               <input
                 id="fName"
                 ref={fName}
@@ -88,7 +90,9 @@ function MainContact() {
             </div>
 
             <div className="contact_inner_wrapper">
-              <label htmlFor="lName">Last Name*</label>
+              <label htmlFor="lName">
+                Last Name <span className="asterix">*</span>
+              </label>
               <input
                 id="lName"
                 ref={lName}
@@ -102,7 +106,9 @@ function MainContact() {
 
           <div className="contact_wrapper">
             <div className="contact_inner_wrapper">
-              <label htmlFor="email">Email*</label>
+              <label htmlFor="email">
+                Email <span className="asterix">*</span>
+              </label>
               <input
                 id="email"
                 ref={email}
@@ -126,7 +132,9 @@ function MainContact() {
           </div>
 
           <div className="contact_textarea">
-            <label>Your Message*</label>
+            <label>
+              Your Message <span className="asterix">*</span>
+            </label>
             <textarea
               id="message"
               ref={message}
@@ -137,7 +145,11 @@ function MainContact() {
           <p>
             By submitting this form you agree to our terms and conditions and
             our privacy policy which explains how we may collect, use and
-            disclose your personal information including to third parties.
+            disclose your personal information including to third parties.{" "}
+            <strong>
+              If the labal has a <span className="asterix">*</span> next to it,
+              it is required.
+            </strong>
           </p>
 
           <div className="contact_submit">
