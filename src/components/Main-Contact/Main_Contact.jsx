@@ -10,13 +10,48 @@ function MainContact() {
   const pNumber = useRef(null);
   const message = useRef(null);
 
-  function ClearForm() {
+  let clear_form = () => {
     document.getElementById("fName").value = "";
     document.getElementById("lName").value = "";
     document.getElementById("email").value = "";
     document.getElementById("pNumber").value = "";
     document.getElementById("message").value = "";
-  }
+  };
+
+  let validate_data = (values) => {
+    for (let [key, value] of Object.entries(values)) {
+      if (value === null || value === undefined || value === "") {
+        if (key === "phone_number") {
+          return true;
+        }
+        return false;
+      }
+    }
+    return true;
+  };
+
+  let send_email = (values) => {
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    var raw = JSON.stringify({
+      subject: "https://dhruv-website.vercel.app/ - Contact Form",
+      body: `First name: ${values.first_name}, Last name: ${values.last_name}, Email: ${values.email}, Phone Number: ${values.phone_number}, Message: ${values.message}`,
+      user_to: "dhruvrayat50@gmail.com",
+    });
+
+    var requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: raw,
+      redirect: "follow",
+    };
+
+    fetch("http://192.9.182.113:3000/send_email", requestOptions)
+      .then((response) => response.json())
+      .then((result) => alert(result.detail))
+      .catch((error) => alert(error.detail));
+  };
 
   return (
     <main className="contact_main">
@@ -33,14 +68,15 @@ function MainContact() {
               message: message.current.value,
             };
 
-            console.log(values);
+            if (!validate_data(values)) return alert("Provide all values.");
 
-            ClearForm();
+            send_email(values);
+            clear_form();
           }}
         >
           <div className="contact_wrapper">
             <div className="contact_inner_wrapper">
-              <label htmlFor="fName">First Name</label>
+              <label htmlFor="fName">First Name*</label>
               <input
                 id="fName"
                 ref={fName}
@@ -52,7 +88,7 @@ function MainContact() {
             </div>
 
             <div className="contact_inner_wrapper">
-              <label htmlFor="lName">Last Name</label>
+              <label htmlFor="lName">Last Name*</label>
               <input
                 id="lName"
                 ref={lName}
@@ -66,7 +102,7 @@ function MainContact() {
 
           <div className="contact_wrapper">
             <div className="contact_inner_wrapper">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">Email*</label>
               <input
                 id="email"
                 ref={email}
@@ -90,7 +126,7 @@ function MainContact() {
           </div>
 
           <div className="contact_textarea">
-            <label>Your Message</label>
+            <label>Your Message*</label>
             <textarea
               id="message"
               ref={message}
